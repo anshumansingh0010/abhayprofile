@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="abhay.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a passionate developer creating amazing digital experiences.</p>
+            <button id="learn">Learn More</button>
+        </div>
+    </section>
+    <dialog id="dialogbox">
+      <p>Hi, I'm Abhay Kumar Singh, a web enthusiastic. I love to create websites because it allows me to blend creativity with technology. Designing user-friendly interfaces and bringing ideas to life through code is very exciting for me. Each project is an opportunity to learn new skills, explore innovative designs, and solve problems in unique ways. The ever-evolving nature of web development keeps me motivated to stay updated and push my creative boundaries.</p>
+    </dialog>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm Abhay Kumar Singh, a student at NIT Patna with a curious mind and a strong passion for learning. I love exploring new ideas, understanding how things work, and constantly challenging myself to grow. I'm excited to connect, exchange ideas, and learn from others. </p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="image5.png" alt="Password Generator">
+                <h3>Password Generator</h3>
+                <p>Try my password generator.</p>
+            </div>
+            <div class="project-card">
+                <img src="image1.png" alt="Tic Tak Toe">
+                <h3>Tic Tak Toe</h3>
+                <p>A game built with only html css and js.</p>
+            </div>
+            <div class="project-card">
+                <img src="image2.png" alt="Travel Website">
+                <h3>Travel E-commerce</h3>
+                <p>An e-commerce website with a modern UI.</p>
+            </div>
+            <div class="project-card">
+              <img src="image3.png" alt="Ineractive Clock">
+              <h3>Ineractive Clock</h3>
+              <p>A digital clock with lots of features.</p>
+          </div>
+        <div class="project-card">
+            <img src="image6.png" alt="Calculator">
+            <h3>Calculator</h3>
+            <p>Make math easy with our online calculator.</p>
+        </div>
+        <div class="project-card">
+            <img src="image4.png" alt="Gumroad replica">
+            <h3>Gumroad replica</h3>
+            <p>Copy of Gumroad Website.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Leave Suggestions</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer class="footer-container">
+        <div class="social-media">
+            <h4>Follow Me</h4>
+            <ul>
+              <li><a href="#">Github</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <div id="help" class="contact-details">
+            <h4>Contact Me</h4>
+            <p>Email: abhay1307@gmail.com</p>
+            <p>Phone: +123 456 7890</p>
+          </div>
+    </footer>
+
+    <script>
+const learn=document.getElementById('learn');
+const dialogbox=document.getElementById('dialogbox')
+learn.addEventListener("click",()=>{
+  dialogbox.showModal();
+});
+dialogbox.addEventListener("click",(event)=>{
+  if(event.target===dialogbox)
+    dialogbox.close();
+});
+    </script>
+</body>
+</html>
